@@ -1,0 +1,5 @@
+D:\Administrator\Documents\Notepad\WindowsFormsApp4\Logging\Logging\obj\Debug\net6.0\Logging.csproj.AssemblyReference.cache
+D:\Administrator\Documents\Notepad\WindowsFormsApp4\Logging\Logging\obj\Debug\net6.0\Logging.GeneratedMSBuildEditorConfig.editorconfig
+D:\Administrator\Documents\Notepad\WindowsFormsApp4\Logging\Logging\obj\Debug\net6.0\Logging.AssemblyInfoInputs.cache
+D:\Administrator\Documents\Notepad\WindowsFormsApp4\Logging\Logging\obj\Debug\net6.0\Logging.AssemblyInfo.cs
+D:\Administrator\Documents\Notepad\WindowsFormsApp4\Logging\Logging\obj\Debug\net6.0\Logging.csproj.CoreCompileInputs.cache
