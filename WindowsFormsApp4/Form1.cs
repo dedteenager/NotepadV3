@@ -30,7 +30,7 @@ namespace WindowsFormsApp4
                 toolStripStatusLabel4.Text = ("Открыт " + openFileDialog1.FileName);
                 string pathToFile = "/log.txt";
                 File.AppendAllText(pathToFile, Environment.NewLine);
-                File.AppendAllText(pathToFile, "Открыт файл: " + openFileDialog1.FileName + " Дата: " + DateTime.Now.ToString("dd MMMM yyyy ") + DateTime.Now.ToString("HH:mm:ss"));
+                File.AppendAllText(pathToFile, "Открыт файл: " + openFileDialog1.FileName + " Дата: " + DateTime.Now.ToString("HH:mm:ss ") + DateTime.Now.ToString("dd MMMM yyyy"));
             }
             catch {
                 ///обработка предусмотренна фреймворком
