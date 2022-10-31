@@ -27,7 +27,7 @@ namespace WindowsFormsApp4
                 string filename = openFileDialog1.FileName;
                 string fileText = System.IO.File.ReadAllText(filename);
                 textBox1.Text = fileText;
-                toolStripStatusLabel4.Text = ("Открыт " + openFileDialog1.FileName);
+                toolStripStatusLabel4.Text = ("Файл: " + openFileDialog1.FileName+ " открыт ");
                 string pathToFile = "/log.txt";
                 File.AppendAllText(pathToFile, Environment.NewLine);
                 File.AppendAllText(pathToFile, "Открыт файл: " + openFileDialog1.FileName + " Дата: " + DateTime.Now.ToString("HH:mm:ss ") + DateTime.Now.ToString("dd MMMM yyyy"));
@@ -44,11 +44,11 @@ namespace WindowsFormsApp4
             try
             {
                 if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
-                    return;
+                return;
                 string filename = saveFileDialog1.FileName;
                 System.IO.File.WriteAllText(filename, textBox1.Text);
                 MessageBox.Show("Файл сохранен");
-                toolStripStatusLabel4.Text = saveFileDialog1.FileName;
+                toolStripStatusLabel4.Text = ("Файл: "+saveFileDialog1.FileName+" сохранён");
                 string pathToFile = "/log.txt";
                 File.AppendAllText(pathToFile, Environment.NewLine);
                 File.AppendAllText(pathToFile, "Сохранён файл: " + saveFileDialog1.FileName + " Дата: " + DateTime.Now.ToString("HH:mm:ss ") + DateTime.Now.ToString("dd MMMM yyyy"));
@@ -82,6 +82,7 @@ namespace WindowsFormsApp4
             frmTeam frmTeam = new frmTeam();
             frmTeam.Show();
         }
+
 
     }
 }
