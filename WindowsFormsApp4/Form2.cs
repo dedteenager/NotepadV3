@@ -19,5 +19,10 @@ namespace WindowsFormsApp4
         {
 
         }
+
+        private void imgAbout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

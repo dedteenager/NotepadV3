@@ -64,3 +64,4 @@ C:\Users\npk-s80-1\Documents\GitHub\NotepadV3\WindowsFormsApp4\obj\Debug\Windows
 C:\Users\npk-s80-1\Documents\GitHub\NotepadV3\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
 C:\Users\npk-s80-1\Documents\GitHub\NotepadV3\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
 C:\Users\npk-s80-1\Documents\GitHub\NotepadV3\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CopyComplete
+C:\Users\npk-s80-1\Documents\GitHub\NotepadV3\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Form4.resources

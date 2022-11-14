@@ -17,6 +17,7 @@ namespace WindowsFormsApp4
 
             openFileDialog1.Filter = "Text-file(*.txt)|*.txt|SQL-file(*.sql)|*.sql|XML-file(*.xml)|*.xml|All files(*.*)|*.*";
             saveFileDialog1.Filter = "Text-file(*.txt)|*.txt|SQL-file(*.sql)|*.sql|XML-file(*.xml)|*.xml|All files(*.*)|*.*";
+
         }
 
         private void OpenBtn_Click(object sender, EventArgs e)
@@ -29,11 +30,11 @@ namespace WindowsFormsApp4
                 string filename = openFileDialog1.FileName;
                 string fileText = System.IO.File.ReadAllText(filename);
                 textBox1.Text = fileText;
-                toolStripStatusLabel4.Text = ("Файл: " + openFileDialog1.FileName+ " открыт ");
-                Logging.Log.Log_Open(filename);
-                //string pathToFile = "/log.txt";
-                //File.AppendAllText(pathToFile, Environment.NewLine);
-                //File.AppendAllText(pathToFile, "Открыт файл: " + openFileDialog1.FileName + " Дата: " + DateTime.Now.ToString("HH:mm:ss ") + DateTime.Now.ToString("dd MMMM yyyy"));
+                toolStripStatusLabel5.Text = ("Файл: " + openFileDialog1.FileName+ " открыт ");
+                //Logging.Log.Log_Open(filename);
+                string pathToFile = "/log.txt";
+                File.AppendAllText(pathToFile, Environment.NewLine);
+                File.AppendAllText(pathToFile, "Открыт файл: " + openFileDialog1.FileName + " Дата: " + DateTime.Now.ToString("HH:mm:ss ") + DateTime.Now.ToString("dd MMMM yyyy"));
             }
             catch {
                 ///обработка предусмотренна фреймворком
@@ -51,9 +52,12 @@ namespace WindowsFormsApp4
                 string filename = saveFileDialog1.FileName;
                 System.IO.File.WriteAllText(filename, textBox1.Text);
                 MessageBox.Show("Файл сохранен");
-                toolStripStatusLabel4.Text = ("Файл: "+saveFileDialog1.FileName+" сохранён");
-                Logging.Log.Log_Save(filename);
-                }
+                toolStripStatusLabel5.Text = ("Файл: "+saveFileDialog1.FileName+" сохранён");
+                //Logging.Log.Log_Save(filename);
+                string pathToFile = "/log.txt";
+                File.AppendAllText(pathToFile, Environment.NewLine);
+                File.AppendAllText(pathToFile, "Открыт файл: " + saveFileDialog1.FileName + " Дата: " + DateTime.Now.ToString("HH:mm:ss ") + DateTime.Now.ToString("dd MMMM yyyy"));
+            }
             catch {
                 ///обработка предусмотренна фреймворком
                 //MessageBox.Show("Some text", "Some title",
@@ -83,6 +87,10 @@ namespace WindowsFormsApp4
             frmTeam.Show();
         }
 
-
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            Form4 Form4 = new Form4();
+            Form4.Show();
+        }
     }
 }

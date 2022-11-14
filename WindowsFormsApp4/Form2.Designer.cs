@@ -45,6 +45,7 @@
             this.imgAbout.Size = new System.Drawing.Size(118, 120);
             this.imgAbout.TabIndex = 1;
             this.imgAbout.TabStop = false;
+            this.imgAbout.Click += new System.EventHandler(this.imgAbout_Click);
             // 
             // txtAbout
             // 
